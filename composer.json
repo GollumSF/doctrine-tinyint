@@ -1,0 +1,31 @@
+{
+	"name" : "gollumsf/doctrine-tinyint",
+	"type" : "library",
+	"description" : "An tinyint type for Doctrine MYSQL",
+	"keywords" : [
+		"tinyint",
+		"doctrine",
+		"symfony"
+	],
+	"homepage" : "https://github.com/GollumSF/DoctrineTinyInt",
+	"license" : "GPL-3.0-or-later",
+	"authors" : [{
+			"name" : "Damien Duboeuf",
+			"email" : "smeagolworms4@gmail.com"
+		}
+	],
+	"support" : {
+		"email" : "smeagolworms4@gmail.com",
+		"wiki" : "https://github.com/GollumSF/DoctrineTinyInt/blob/master/README.md"
+	},
+	"minimum-stability": "dev",
+	"require" : {
+		"php" : ">=7.0"
+	},
+	"autoload" : {
+		"psr-0" : {
+			"GollumSF\\Doctrine" : ""
+		}
+	},
+	"target-dir" : "GollumSF/Doctrine"
+}
