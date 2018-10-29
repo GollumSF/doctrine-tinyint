@@ -1,4 +1,4 @@
-# Enum
+# Doctrine TinyInt
 
 Simple classe, trait and interface for implement enum in PHP 
 
