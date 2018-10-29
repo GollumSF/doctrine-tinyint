@@ -1,6 +1,6 @@
 # Doctrine TinyInt
 
-Simple classe, trait and interface for implement enum in PHP 
+An tinyint type for Doctrine MYSQL
 
 ## Installation:
 
