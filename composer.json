@@ -7,7 +7,7 @@
 		"doctrine",
 		"symfony"
 	],
-	"homepage" : "https://github.com/GollumSF/DoctrineTinyInt",
+	"homepage" : "https://github.com/GollumSF/doctrine-tinyint",
 	"license" : "GPL-3.0-or-later",
 	"authors" : [{
 			"name" : "Damien Duboeuf",
@@ -16,7 +16,7 @@
 	],
 	"support" : {
 		"email" : "smeagolworms4@gmail.com",
-		"wiki" : "https://github.com/GollumSF/DoctrineTinyInt/blob/master/README.md"
+		"wiki" : "https://github.com/GollumSF/doctrine-tinyint/blob/master/README.md"
 	},
 	"minimum-stability": "dev",
 	"require" : {
