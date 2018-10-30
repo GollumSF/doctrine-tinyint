@@ -13,11 +13,11 @@ class TinyInt extends Type {
 	}
 	
 	public function convertToPHPValue($value, AbstractPlatform $platform) {
-		return (int)$value;
+		return $value;
 	}
 	
 	public function convertToDatabaseValue($value, AbstractPlatform $platform) {
-		return (int)$value;
+		return $value;
 	}
 	
 	public function getName() {
