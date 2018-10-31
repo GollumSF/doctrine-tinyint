@@ -22,7 +22,9 @@ doctrine:
 
 
 ```php
-use App\Entity;
+namespace App\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Table()
