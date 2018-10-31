@@ -12,14 +12,6 @@ class TinyInt extends Type {
 		return 'TINYINT';
 	}
 	
-	public function convertToPHPValue($value, AbstractPlatform $platform) {
-		return $value;
-	}
-	
-	public function convertToDatabaseValue($value, AbstractPlatform $platform) {
-		return $value;
-	}
-	
 	public function getName() {
 		return self::TINYINT;
 	}
