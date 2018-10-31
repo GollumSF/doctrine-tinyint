@@ -21,7 +21,7 @@
 	"minimum-stability": "dev",
 	"require" : {
 		"php" : ">=7.0",
-		"doctrine/dbla": "2.*"
+		"doctrine/dbal": "2.*"
 	},
 	"autoload" : {
 		"psr-0" : {
