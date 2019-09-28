@@ -9,7 +9,7 @@ class TinyInt extends Type {
 	const TINYINT = 'tinyint';
 	
 	public function getSQLDeclaration(array $fieldDeclaration, AbstractPlatform $platform) {
-		return 'TINYINT';
+		return 'TINYINT' . ( ! empty($fieldDeclaration['unsigned']) ? ' UNSIGNED' : '');
 	}
 	
 	public function getName() {
