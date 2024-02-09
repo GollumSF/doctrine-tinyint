@@ -1,7 +1,7 @@
 {
 	"name" : "gollumsf/doctrine-tinyint",
 	"type" : "library",
-	"description" : "An tinyint type for Doctrine MYSQL",
+	"description" : "A tinyint type for Doctrine MYSQL",
 	"keywords" : [
 		"tinyint",
 		"doctrine",
@@ -20,13 +20,12 @@
 	},
 	"minimum-stability": "dev",
 	"require" : {
-		"php" : ">=7.0",
-		"doctrine/dbal": "^2|^3"
+		"php" : ">=8",
+		"doctrine/dbal": "^4"
 	},
 	"autoload" : {
-		"psr-0" : {
-			"GollumSF\\Doctrine" : ""
+		"psr-4" : {
+			"GollumSF\\Doctrine\\" : ""
 		}
-	},
-	"target-dir" : "GollumSF/Doctrine"
+	}
 }

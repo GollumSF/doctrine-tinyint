@@ -1,6 +1,6 @@
 # Doctrine TinyInt
 
-An tinyint type for Doctrine MYSQL
+A tinyint type for Doctrine MYSQL
 
 ## Installation:
 
@@ -25,17 +25,14 @@ doctrine:
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use GollumSF\Doctrine\TinyInt;
 
-/**
- * @ORM\Table()
- */
+#[ORM\Entity]
+#[ORM\Table(name: 'entities')]
 class Entity {
 	
-	/**
-	 * @ORM\Column(type="tinyint")
-	 * @var int
-	 */
-	private $tinyint;
+	#[Column(name: 'tinyint', type: TinyInt::TINYINT)]
+	private int $tinyint;
 	
 	/////////
 	// ... //

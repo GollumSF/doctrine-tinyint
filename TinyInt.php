@@ -5,22 +5,20 @@ namespace GollumSF\Doctrine;
 use Doctrine\DBAL\Platforms\AbstractPlatform;
 use Doctrine\DBAL\Types\Type;
 
-class TinyInt extends Type {
-	const TINYINT = 'tinyint';
-	
+class TinyInt extends Type
+{
+	public const TINYINT = 'tinyint';
+
 	/**
-	 * @param array $fieldDeclaration
-	 * @param AbstractPlatform $platform
-	 * @return string
+	 * @inheritDoc
 	 */
-	public function getSQLDeclaration(array $fieldDeclaration, AbstractPlatform $platform) {
-		return 'TINYINT' . ( ! empty($fieldDeclaration['unsigned']) ? ' UNSIGNED' : '');
+	public function getSQLDeclaration(array $column, AbstractPlatform $platform): string
+	{
+		return 'TINYINT' . (!empty($column['unsigned']) ? ' UNSIGNED' : '');
 	}
-	
-	/**
-	 * @return string
-	 */
-	public function getName() {
+
+	public function getName(): string
+	{
 		return self::TINYINT;
 	}
 }
