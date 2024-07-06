@@ -14,7 +14,7 @@ class TinyInt extends Type
 	 */
 	public function getSQLDeclaration(array $column, AbstractPlatform $platform): string
 	{
-		return 'TINYINT' . (!empty($column['unsigned']) ? ' UNSIGNED' : '');
+		return 'TINYINT' . (!empty($column['unsigned']) ? ' UNSIGNED' : '') . ' COMMENT \'(DC2Type:tinyint)\'';
 	}
 
 	public function getName(): string
